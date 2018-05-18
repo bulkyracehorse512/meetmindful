@@ -108,6 +108,7 @@ a:hover {
   width: 30%;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
   height: 100%;
   border-left-width: 2px;
   border-left-style: solid;
@@ -118,13 +119,19 @@ a:hover {
 .feature h3 {
   font-family: 'IntroBold', Fallback, sans-serif;
   font-size: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 45px;
   text-align: center;
+  background-position: center bottom;
+  background-image: url("img/chakra.png");
+  background-position-y: 30px; 
+  background-size: 25px;
+  background-repeat: no-repeat;
 }
 
 .feature p {
   font-family: 'MuseoSans', Fallback, sans-serif;
   align: left;
+  font-size: 10px;
 }
 
 @media only screen and (max-device-width: 800px) {
