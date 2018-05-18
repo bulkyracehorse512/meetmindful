@@ -96,18 +96,35 @@ a:hover {
 .features {
   display: inline-block;
   height: 30%;
+  color: rgb(77, 72, 98);
+  padding-left: 15px;
+  padding-right: 15px; 
 }
 .feature {
-  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5%;
+  float: left;
   width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgb(77, 72, 98);
+  border-block-end: none;
 }
 
 .feature h3 {
   font-family: 'IntroBold', Fallback, sans-serif;
+  font-size: 18px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 .feature p {
   font-family: 'MuseoSans', Fallback, sans-serif;
+  align: left;
 }
 
 @media only screen and (max-device-width: 800px) {
