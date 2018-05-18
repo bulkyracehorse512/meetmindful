@@ -37,7 +37,7 @@ a:hover {
   font-size: 18px;
   margin-right: 20px;
   margin-left: 20px;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .nav a.logo {
@@ -101,9 +101,10 @@ a:hover {
   padding-right: 15px; 
 }
 .feature {
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 5%;
   float: left;
   width: 30%;
   padding-left: 10px;
@@ -115,6 +116,9 @@ a:hover {
   border-left-color: rgb(77, 72, 98);
   border-block-end: none;
 }
+.feature:first-child { 
+  border-left: none;
+} 
 
 .feature h3 {
   font-family: 'IntroBold', Fallback, sans-serif;
@@ -132,6 +136,9 @@ a:hover {
   font-family: 'MuseoSans', Fallback, sans-serif;
   align: left;
   font-size: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 15px;
 }
 
 @media only screen and (max-device-width: 800px) {
