@@ -8,8 +8,113 @@
   src: url('fonts/IntroBold.otf');
 }
 
-body {
-  display: block;
+@media only screen and (max-device-width: 800px) {
+  .full {
+    display: none;
+  }
+
+  .nav {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    width: 100%;
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(158, 145, 100);
+  }
+
+  .nav a {
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    font-size: 2.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .small {
+    width: 3em;
+    padding: 0;
+  }
+
+  .heading {
+    padding-bottom: 50%;
+    background-position: right top;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: auto 75em;
+    background-image: url("img/splash.jpg"); 
+    background-repeat: no-repeat;
+    /* display: block; */
+    color: rgb(123, 120, 140);
+    position: relative;
+    overflow: hidden;
+    /* display: table-cell; */
+  }
+  
+  .heading h1 {
+    font-family: 'IntroBold', Fallback, sans-serif;
+    font-size: 9em;
+    padding-top: 1.5em;
+    text-align: center;
+  }
+  
+  .heading h2 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-display: cover;
+  }
+
+  .features {
+    display: block;
+    height: 30%;
+    color: rgb(77, 72, 98);
+    padding-left: 15px;
+    padding-right: 15px; 
+  }
+
+  .feature {
+    padding: 4em;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    border-bottom-width: .5em;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(77, 72, 98);
+    border-block-end: none;
+  }
+  .feature:last-child { 
+    border-bottom: none;
+  } 
+  .feature h3 {
+    font-family: 'IntroBold', Fallback, sans-serif;
+    font-size: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    background-position: center bottom;
+    background-image: url("img/chakra.png");
+    background-position-y: 2em; 
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  .feature p {
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    text-align: left;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-left: 4em;
+    padding-right: 3em;
+  } 
+
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -21,133 +126,130 @@ a:hover {
   text-decoration: underline;
 }
 
-.nav {
-  display: inline-block;
-  width: 100%;
-  background-color: white;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(158, 145, 100);
-}
-
-.nav a {
-  top: 30%;
-  float: right;
-  font-family: 'MuseoSans', Fallback, sans-serif;
-  font-size: 18px;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 15px;
-}
-
-.nav a.logo {
-  float: left;
-  width: 30%;
-  padding: 0;
-}
-
-
-.heading {
-  padding-bottom: 40%;
-  background-position: center top;
-  max-width: 100%;
-  max-height: 100%;
-  background-size: 100% 100%;
-  background-image: url("img/splash.jpg"); 
-  text-align: center;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  /* display: block; */
-  color: rgb(123, 120, 140);
-  position: relative;
-  overflow: hidden;
-  /* display: table-cell; */
-}
-
-.heading h1 {
-  font-family: 'IntroBold', Fallback, sans-serif;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 10px;
-}
-
-.heading h2 {
-  position: absolute;
-  font-family: 'MuseoSans', Fallback, sans-serif;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-transform: lowercase;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.full {
-  width: 65%;
-  height: auto;
-}
-
-.small {
-  display: none;
-}
-
-.features {
-  display: inline-block;
-  height: 30%;
-  color: rgb(77, 72, 98);
-  padding-left: 15px;
-  padding-right: 15px; 
-}
-.feature {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 0px;
-  margin-right: 0px;
-  float: left;
-  width: 30%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 25px;
-  height: 100%;
-  border-left-width: 2px;
-  border-left-style: solid;
-  border-left-color: rgb(77, 72, 98);
-  border-block-end: none;
-}
-.feature:first-child { 
-  border-left: none;
-} 
-
-.feature h3 {
-  font-family: 'IntroBold', Fallback, sans-serif;
-  font-size: 18px;
-  padding-bottom: 45px;
-  text-align: center;
-  background-position: center bottom;
-  background-image: url("img/chakra.png");
-  background-position-y: 30px; 
-  background-size: 25px;
-  background-repeat: no-repeat;
-}
-
-.feature p {
-  font-family: 'MuseoSans', Fallback, sans-serif;
-  align: left;
-  font-size: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 15px;
-}
-
-@media only screen and (max-device-width: 800px) {
+@media screean and (min-width: 801px) {
+  body {
+    display: block;
+  }
+  
+  .nav {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(158, 145, 100);
+  }
+  
+  .nav a {
+    top: 30%;
+    float: right;
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 15px;
+  }
+  
+  .nav a.logo {
+    float: left;
+    width: 30%;
+    padding: 0;
+  }
+  
+  
+  .heading {
+    padding-bottom: 40%;
+    background-position: center top;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 100% 100%;
+    background-image: url("img/splash.jpg"); 
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    /* display: block; */
+    color: rgb(123, 120, 140);
+    position: relative;
+    overflow: hidden;
+    /* display: table-cell; */
+  }
+  
+  .heading h1 {
+    font-family: 'IntroBold', Fallback, sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+  }
+  
+  .heading h2 {
+    position: absolute;
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
   .full {
+    width: 65%;
+    height: auto;
+  }
+  
+  .small {
     display: none;
   }
-
-  .small {
-    height: 500px;
+  
+  .features {
+    display: inline-block;
+    height: 30%;
+    color: rgb(77, 72, 98);
+    padding-left: 15px;
+    padding-right: 15px; 
   }
-
+  .feature {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    height: 100%;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: rgb(77, 72, 98);
+    border-block-end: none;
+  }
+  .feature:first-child { 
+    border-left: none;
+  } 
+  
+  .feature h3 {
+    font-family: 'IntroBold', Fallback, sans-serif;
+    font-size: 18px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-position: center bottom;
+    background-image: url("img/chakra.png");
+    background-position-y: 30px; 
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+  
+  .feature p {
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    align: left;
+    font-size: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 15px;
+  } 
 }
+
+
