@@ -8,7 +8,142 @@
   src: url('fonts/IntroBold.otf');
 }
 
-@media only screen and (max-device-width: 800px) {
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; 
+  color: rgb(155, 135, 92); 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  display: block;
+}
+
+@media screen and (min-device-width: 416px) { 
+  .nav {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(158, 145, 100);
+  }
+
+  .nav a {
+    top: 30%;
+    float: right;
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 15px;
+  }
+
+  .nav a.logo {
+    float: left;
+    width: 30%;
+    padding: 0;
+  }
+
+
+  .heading {
+    padding-bottom: 40%;
+    background-position: center top;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 100% 100%;
+    background-image: url("img/splash.jpg"); 
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    /* display: block; */
+    color: rgb(123, 120, 140);
+    position: relative;
+    overflow: hidden;
+    /* display: table-cell; */
+  }
+
+  .heading h1 {
+    font-family: 'IntroBold', Fallback, sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 10px;
+  }
+
+  .heading h2 {
+    position: absolute;
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .full {
+    width: 65%;
+    height: auto;
+  }
+
+  .small {
+    display: none;
+  }
+
+  .features {
+    display: inline-block;
+    height: 30%;
+    color: rgb(77, 72, 98);
+    padding-left: 15px;
+    padding-right: 15px; 
+  }
+  .feature {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    float: left;
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    height: 100%;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: rgb(77, 72, 98);
+    border-block-end: none;
+  }
+  .feature:first-child { 
+    border-left: none;
+  } 
+
+  .feature h3 {
+    font-family: 'IntroBold', Fallback, sans-serif;
+    font-size: 18px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-position: center bottom;
+    background-image: url("img/chakra.png");
+    background-position-y: 30px; 
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+
+  .feature p {
+    font-family: 'MuseoSans', Fallback, sans-serif;
+    align: left;
+    font-size: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 15px;
+  } 
+}
+
+@media screen and (max-device-width: 415px) {
   .full {
     display: none;
   }
@@ -45,7 +180,7 @@
     background-position: right top;
     max-width: 100%;
     max-height: 100%;
-    background-size: auto 75em;
+    background-size: auto 100%;
     background-image: url("img/splash.jpg"); 
     background-repeat: no-repeat;
     /* display: block; */
@@ -116,140 +251,3 @@
   } 
 
 }
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none; 
-  color: rgb(155, 135, 92); 
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 801px) {
-  body {
-    display: block;
-  }
-  
-  .nav {
-    display: inline-block;
-    width: 100%;
-    background-color: white;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(158, 145, 100);
-  }
-  
-  .nav a {
-    top: 30%;
-    float: right;
-    font-family: 'MuseoSans', Fallback, sans-serif;
-    font-size: 18px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 15px;
-  }
-  
-  .nav a.logo {
-    float: left;
-    width: 30%;
-    padding: 0;
-  }
-  
-  
-  .heading {
-    padding-bottom: 40%;
-    background-position: center top;
-    max-width: 100%;
-    max-height: 100%;
-    background-size: 100% 100%;
-    background-image: url("img/splash.jpg"); 
-    text-align: center;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    /* display: block; */
-    color: rgb(123, 120, 140);
-    position: relative;
-    overflow: hidden;
-    /* display: table-cell; */
-  }
-  
-  .heading h1 {
-    font-family: 'IntroBold', Fallback, sans-serif;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 10px;
-  }
-  
-  .heading h2 {
-    position: absolute;
-    font-family: 'MuseoSans', Fallback, sans-serif;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: lowercase;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .full {
-    width: 65%;
-    height: auto;
-  }
-  
-  .small {
-    display: none;
-  }
-  
-  .features {
-    display: inline-block;
-    height: 30%;
-    color: rgb(77, 72, 98);
-    padding-left: 15px;
-    padding-right: 15px; 
-  }
-  .feature {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 0px;
-    margin-right: 0px;
-    float: left;
-    width: 30%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
-    height: 100%;
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: rgb(77, 72, 98);
-    border-block-end: none;
-  }
-  .feature:first-child { 
-    border-left: none;
-  } 
-  
-  .feature h3 {
-    font-family: 'IntroBold', Fallback, sans-serif;
-    font-size: 18px;
-    padding-bottom: 45px;
-    text-align: center;
-    background-position: center bottom;
-    background-image: url("img/chakra.png");
-    background-position-y: 30px; 
-    background-size: 25px;
-    background-repeat: no-repeat;
-  }
-  
-  .feature p {
-    font-family: 'MuseoSans', Fallback, sans-serif;
-    align: left;
-    font-size: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 15px;
-  } 
-}
-
-
