@@ -126,7 +126,7 @@ a:hover {
   text-decoration: underline;
 }
 
-@media screean and (min-width: 801px) {
+@media screen and (min-width: 801px) {
   body {
     display: block;
   }
